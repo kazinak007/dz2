@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-regular.otf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-light-webfont.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-light.otf') format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('../fonts/montserrat/montserrat-extralight-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-extralight-webfont.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-extralight.otf') format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/raleway-medium-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-medium-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-medium.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-bold.ttf') format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/raleway-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-extrabold-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-extrabold.ttf') format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/raleway-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-semibold-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-semiBold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+        url('../fonts/roboto/roboto-regular-webfont.woff') format('woff'),
+        url('../fonts/roboto/roboto-regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-header {
+    width: 100%;
+    min-height: 1024px;
+    background: url('../img/photo.jpg') no-repeat center;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: darken;
+    margin: 0;
+}
+
+.header-top-part {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 181px;
+    text-decoration: none;
+    color: #fff;
+    margin: 40px 219px 0 0;
+}
+
+.logo-svg {
+    fill: currentColor;
+}
+
+.logo-txt {
+    font-family: 'raleway', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.logo:hover {
+    color: #998675;
+}
+
+.logo:active {
+    color: #f58803;
+}
+
+.nav-menu {
+    align-self: center;
+}
+
+.header-menu {
+    margin: 0;
+    float: left;
+}
+
+.menu-item {
+    float: left;
+    list-style-type: none;
+    margin: 0 30px 0 0;
+}
+
+.menu-item:nth-child(8) {
+    margin: 0 63px 0 0;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.menu-item-link:hover {
+    color: #c7b299;
+}
+
+.menu-item-link:active {
+    color: #f58803;
+}
+
+.purchase-button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 18px;
+    height: 24px;
+    fill: #ffffff;
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+.purchase-button:hover {
+    fill: #c7b299;
+}
+
+.purchase-button:active {
+    fill: #f58803;
+}
+
+.form-search {
+    float: left;
+    width: 60px;
+}
+
+.header-search {
+    width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background-image: url(../img/icon-search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.header-search:focus {
+    width: 200px;
+    background-color: #fff;
+    transition: width 1s ease-out;
+}
+
+.header-slider {
+    width: 100%;
+    margin: 270px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.slider-2title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.header-title {
+    width: 100%;
+    text-align: center;
+    width: 589px;
+    height: 50px;
+    color: #ffffff;
+    font-family: "raleway", sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.slider-txt {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+}
+
+.get-start-link {
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+    height: 53px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    color: #ffffff;
+    font-family: 'raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 53px;
+    text-transform: uppercase;
+    outline: none;
+    margin: 52px 0 0 0;
+}
+
+.get-start-link:hover {
+    color: black;
+}
+
+.get-start-link:active {
+    box-shadow: none;
+}
+
+.slider-arrow1 {
+    display: block;
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    border-top: 2px solid #a2a19f;
+    border-right: 2px solid #a2a19f;
+    transform: rotate(45deg);
+    top: 100px;
+    right: 150px;
+}
+
+.slider-arrow1:nth-child(5) {
+    transform: rotate(225deg);
+    top: 100px;
+    left: 150px;
+
+}
+
+.slider-arrow1:hover {
+    border-color: #c7b299;
+}
+
+.slider-arrow1:active {
+    border-color: #f58803;
+}
+
+.pagination {
+    position: absolute;
+    display: flex;
+    bottom: -350px;
+}
+
+.pag-item {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    opacity: 0.5;
+    margin: 0 10px 0 0;
+
+}
+
+.pag-item:nth-child(2) {
+    border: 2px solid #d3c1ad;
+    transform: scale(1.2);
+    background-color: transparent;
+}
+
+.pag-item:hover {
+    background-color: transparent;
+    border: 2px solid #d3c1ad;
+
+}
